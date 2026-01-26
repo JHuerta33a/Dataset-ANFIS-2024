@@ -1,1 +1,1 @@
-
+Carpeta de datos crudos para entrenamiento y validación del modelo.
