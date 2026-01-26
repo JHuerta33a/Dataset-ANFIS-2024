@@ -1,7 +1,3 @@
-!pip install pykrige
-!pip install geopandas
-!pip install contextily
-
 import pandas as pd
 import numpy as np
 import os
