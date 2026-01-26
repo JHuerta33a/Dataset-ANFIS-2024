@@ -49,14 +49,6 @@ def leer_hojas_csv(ruta_archivo):
 ruta_archivo = 'BD_SMCAQ_15ABR2025-31AGO2025.xlsx'
 df_CAP, df_EPG, df_FEO = leer_hojas_csv(ruta_archivo)
 
-df_ubicaciones = pd.DataFrame(columns=['Estacion', 'Latitud', 'Longitud'])
-
-df_ubicaciones = pd.concat([df_ubicaciones, pd.DataFrame([{'Estacion': "EPG", 'Latitud': 20.627625, 'Longitud': -100.40876666666668}])], ignore_index=True)
-df_ubicaciones = pd.concat([df_ubicaciones, pd.DataFrame([{'Estacion': "FEO",'Latitud': 20.635125, 'Longitud': -100.45924722222223}])], ignore_index=True)
-
-# Imprimir el DataFrame
-df_ubicaciones
-
 """# ***Conversión de ppb a ppm***"""
 
 df_CAP = df_CAP.rename(columns={'O3': 'O3 ppb', 'SO2': 'SO2 ppb', 'NO2': 'NO2 ppb', 'CO': 'CO ppb'})
